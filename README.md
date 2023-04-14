@@ -1,6 +1,6 @@
 # cyql api (beta)
 
-Query projects data from [cyql.io](https://n7ib3-4qaaa-aaaai-qagnq-cai.raw.ic0.app/#/) – [Internet Computer](https://internetcomputer.org/) curated projects registry.
+Get a list of current projects running on the [Internet Computer](https://internetcomputer.org/) from [cyql.io](https://n7ib3-4qaaa-aaaai-qagnq-cai.raw.ic0.app/), curated #ic projects registry.
 
 ## cyql api canister
 
@@ -8,7 +8,7 @@ Query projects data from [cyql.io](https://n7ib3-4qaaa-aaaai-qagnq-cai.raw.ic0.a
 - candid interface: https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.ic0.app/?id=htxcx-3iaaa-aaaal-acd2q-cai
 - idl files: ...
 
-## query data
+## query the data
 
 To query the projects from database you need to access the [cyql api canister](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.ic0.app/?id=htxcx-3iaaa-aaaal-acd2q-cai) and call one of the methods below, depending on whether you want to get all the projects or one specific project.
 
