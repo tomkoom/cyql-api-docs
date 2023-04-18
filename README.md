@@ -14,14 +14,18 @@ Query the data from [cyql.io](https://n7ib3-4qaaa-aaaai-qagnq-cai.raw.ic0.app/) 
 
 To query the projects from database you need to access the [cyql api canister](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.ic0.app/?id=htxcx-3iaaa-aaaal-acd2q-cai) and call one of the methods below, depending on whether you want to get all the projects or one specific project.
 
-### query single documet `get_doc(text, text)`
+### query single documet
+
+#### `get_doc(text, text)`
 
 Method accepts two arguments of type `text`:
 
 1. collection name: `"cyql-projects"`
 2. document key: e.g. `"QX8lS9ogfjBJ"`
 
-### query all documets `list_docs(text)`
+### query all documets
+
+#### `list_docs(text)`
 
 Method accepts one argument of type `text`:
 
@@ -56,23 +60,17 @@ Method accepts one argument of type `text`:
 ```js
 {
     // MAIN
-
     name: "",
     slug: "",
     description: "",
-
-    // categories field is an array
-    // project may be in more than one category
-    categories: [],
+    categories: [], // project may be in more than one category
 
     // MAIN LINKS
-
+    logo: "",
     website: "",
     canister: "",
-    logo: "",
 
     // SOCIAL LINKS
-
     twitter: "",
     discord: "",
     telegram: "",
@@ -80,7 +78,6 @@ Method accepts one argument of type `text`:
     medium: "",
 
     // SOCIAL IC LINKS
-
     dscvr: "",
     distrikt: "",
     openchat: "",
@@ -91,59 +88,40 @@ Method accepts one argument of type `text`:
     funded: "",
 
     // ADDITIONAL
-
     app: "",
     docs: "",
     faq: "",
     whitepaper: "",
-
-    // null or boolean
-    grantee: null,
+    grantee: null, // null or boolean
 
     // NFT MAIN
-
     nft_sale_date: "",
     nft_units: "",
     nft_unit_price: "",
     nft_sale_url: "",
 
     // NFT MARKETS
-
-    // entrepot.app
-    nft_market_entrepot: "",
-
-    // skeh5-daaaa-aaaai-aar4q-cai.raw.ic0.app
-    nft_market_ccc: "",
-
-    // tppkg-ziaaa-aaaal-qatrq-cai.raw.ic0.app
-    nft_market_yumi: "";
+    nft_market_entrepot: "", // entrepot.app
+    nft_market_ccc: "",      // skeh5-daaaa-aaaai-aar4q-cai.raw.ic0.app
+    nft_market_yumi: "";     // tppkg-ziaaa-aaaal-qatrq-cai.raw.ic0.app
 
     // NFT RARITY CHECKERS
-
-    // dgdg.app
-    nft_rarity_dgdg: "",
+    nft_rarity_dgdg: "",     // dgdg.app
 
     // NFT STATS
-
+    nft_stats: "",
     nft_stats_nftgeek: "",
 
     // NFT IMAGE EXAMPLES
-
     nft_img_1: "",
     nft_img_2: "",
     nft_img_3: "",
     nft_img_4: "",
 
     // METADATA
-
-    // null or number
-    added: null,
-
-    // null or number
-    updated: null,
-
-    // null or boolean
-    archived: null,
+    added: null,    // null or number
+    updated: null,  // null or number
+    archived: null, // null or boolean
 }
 ```
 
