@@ -45,95 +45,94 @@ Method accepts one argument of type `text`:
 
 ### `get_doc` query result
 
-```js
-{
-    created_at: 0n, // bigint
-    data: { ... },  // object (see project doc data notation below)
-    key: "",        // string (document key)
-    owner: "",      // string (principal id of the owner)
-    updated_at: 0n, // bigint
-}
+```typescript
+type ProjectDoc = {
+	created_at: bigint;
+	// see project doc data notation below
+	data: ProjectDocData;
+	// document key
+	key: string;
+	// principal id of the owner
+	owner: string;
+	updated_at: bigint;
+};
 ```
 
 ### project doc `.data` object
 
-```js
-{
-    // MAIN
-    name: "",
-    slug: "",
-    description: "",
-    // categories - array: project may be in more than one category
-    categories: [],
+```typescript
+type ProjectDocData = {
+	// main
+	name: string;
+	slug: string;
+	description: string;
+	// categories is an array of strings: project may be in more than one category
+	categories: string[];
 
-    // MAIN LINKS
-    logo: "",
-    website: "",
-    canister: "",
+	// main links
+	logo: string;
+	website: string;
+	canister: string;
 
-    // SOCIAL LINKS
-    twitter: "",
-    discord: "",
-    telegram: "",
-    github: "",
-    medium: "",
+	// social links
+	twitter: string;
+	discord: string;
+	telegram: string;
+	github: string;
+	medium: string;
 
-    // SOCIAL IC LINKS
-    dscvr: "",
-    distrikt: "",
-    openchat: "",
-    taggr: "",
-    seers: "",
-    nuance: "",
-    catalyze: "",
-    funded: "",
+	// social ic links
+	dscvr: string;
+	distrikt: string;
+	openchat: string;
+	taggr: string;
+	seers: string;
+	nuance: string;
+	catalyze: string;
+	funded: string;
 
-    // ADDITIONAL
-    app: "",
-    docs: "",
-    faq: "",
-    whitepaper: "",
-    // grantee - null or boolean
-    grantee: null,
+	// additional
+	app: string;
+	docs: string;
+	faq: string;
+	whitepaper: string;
+	grantee: null | boolean;
 
-    // NFT MAIN
-    nft_sale_date: "",
-    nft_units: "",
-    nft_unit_price: "",
-    nft_sale_url: "",
+	// nft main
+	nft_sale_date: string;
+	nft_units: string;
+	nft_unit_price: string;
+	nft_sale_url: string;
 
-    // NFT MARKETS
-    nft_market: "",
-    // 🔗 entrepot.app
-    nft_market_entrepot: "",
-    // 🔗 skeh5-daaaa-aaaai-aar4q-cai.raw.ic0.app
-    nft_market_ccc: "",
-    // 🔗 tppkg-ziaaa-aaaal-qatrq-cai.raw.ic0.app
-    nft_market_yumi: "",
+	// nft markets
+	nft_market: string;
+	// 🔗 entrepot.app
+	nft_market_entrepot: string;
+	// 🔗 skeh5-daaaa-aaaai-aar4q-cai.raw.ic0.app
+	nft_market_ccc: string;
+	// 🔗 tppkg-ziaaa-aaaal-qatrq-cai.raw.ic0.app
+	nft_market_yumi: string;
 
-    // NFT RARITY CHECKERS
-    nft_rarity: "",
-    // 🔗 dgdg.app
-    nft_rarity_dgdg: "",
+	// nft rarity checkers
+	nft_rarity: string;
+	// 🔗 dgdg.app
+	nft_rarity_dgdg: string;
 
-    // NFT STATS
-    nft_stats: "",
-    nft_stats_nftgeek: "",
+	// nft stats
+	nft_stats: string;
+	nft_stats_nftgeek: string;
 
-    // NFT IMAGE EXAMPLES
-    nft_img_1: "",
-    nft_img_2: "",
-    nft_img_3: "",
-    nft_img_4: "",
+	// nft image examples
+	nft_img_1: string;
+	nft_img_2: string;
+	nft_img_3: string;
+	nft_img_4: string;
 
-    // METADATA
-    // added - null or number
-    added: null,
-    // updated - null or number
-    updated: null,
-    // archived - null or boolean
-    archived: null,
-}
+	// metadata
+	added: null | boolean;
+	updated: null | number;
+	archived: null | number;
+};
 ```
 
 ### list of project categories
