@@ -63,7 +63,8 @@ Method accepts one argument of type `text`:
     name: "",
     slug: "",
     description: "",
-    categories: [], // project may be in more than one category
+    // categories - array: project may be in more than one category
+    categories: [],
 
     // MAIN LINKS
     logo: "",
@@ -92,7 +93,8 @@ Method accepts one argument of type `text`:
     docs: "",
     faq: "",
     whitepaper: "",
-    grantee: null, // null or boolean
+    // grantee - null or boolean
+    grantee: null,
 
     // NFT MAIN
     nft_sale_date: "",
@@ -101,12 +103,18 @@ Method accepts one argument of type `text`:
     nft_sale_url: "",
 
     // NFT MARKETS
-    nft_market_entrepot: "", // entrepot.app
-    nft_market_ccc: "",      // skeh5-daaaa-aaaai-aar4q-cai.raw.ic0.app
-    nft_market_yumi: "";     // tppkg-ziaaa-aaaal-qatrq-cai.raw.ic0.app
+    nft_market: "",
+    // 🔗 entrepot.app
+    nft_market_entrepot: "",
+    // 🔗 skeh5-daaaa-aaaai-aar4q-cai.raw.ic0.app
+    nft_market_ccc: "",
+    // 🔗 tppkg-ziaaa-aaaal-qatrq-cai.raw.ic0.app
+    nft_market_yumi: "",
 
     // NFT RARITY CHECKERS
-    nft_rarity_dgdg: "",     // dgdg.app
+    nft_rarity: "",
+    // 🔗 dgdg.app
+    nft_rarity_dgdg: "",
 
     // NFT STATS
     nft_stats: "",
@@ -119,9 +127,12 @@ Method accepts one argument of type `text`:
     nft_img_4: "",
 
     // METADATA
-    added: null,    // null or number
-    updated: null,  // null or number
-    archived: null, // null or boolean
+    // added - null or number
+    added: null,
+    // updated - null or number
+    updated: null,
+    // archived - null or boolean
+    archived: null,
 }
 ```
 
