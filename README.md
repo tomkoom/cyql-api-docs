@@ -48,11 +48,8 @@ Method accepts one argument of type `text`:
 ```typescript
 type ProjectDoc = {
 	created_at: bigint;
-	// see project doc data notation below
 	data: ProjectDocData;
-	// document key
 	key: string;
-	// principal id of the owner
 	owner: string;
 	updated_at: bigint;
 };
