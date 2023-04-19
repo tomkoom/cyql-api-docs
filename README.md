@@ -93,13 +93,13 @@ type ProjectDocData = {
 	docs: string;
 	faq: string;
 	whitepaper: string;
-	grantee: null | boolean;
+	grantee: boolean;
 
 	// nft main
 	nft_sale_date: string;
+	nft_sale_url: string;
 	nft_units: string;
 	nft_unit_price: string;
-	nft_sale_url: string;
 
 	// nft markets
 	nft_market: string;
@@ -126,9 +126,9 @@ type ProjectDocData = {
 	nft_img_4: string;
 
 	// metadata
-	added: null | boolean;
+	added: null | number;
 	updated: null | number;
-	archived: null | number;
+	archived: boolean;
 };
 ```
 
