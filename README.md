@@ -21,7 +21,7 @@ To query the projects from database you need to access the [cyql api canister](h
 Method accepts two arguments of type `text`:
 
 1. collection name: `"cyql-projects"`
-2. document key: e.g. `"QX8lS9ogfjBJ"`
+2. document key (alphanumeric 12 chars string): e.g. `"QX8lS9ogfjBJ"`
 
 ### query all documets
 
@@ -42,6 +42,8 @@ Method accepts one argument of type `text`:
 - example: ...
 
 ## data models
+
+Please note that the data models described below may be the subject to change as more information about the projects is added.
 
 ### `get_doc` query result
 
