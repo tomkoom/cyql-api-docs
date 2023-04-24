@@ -59,6 +59,8 @@ type ProjectDoc = {
 
 ### project doc `.data` object
 
+Note that some projects may be archived due to the closure or lack of activity for a long period, thus these projects `archived` property will be set to `true`. If you want your service to display the most relevant projects, you need to filter them so as to exclude the ones that are archived. Also, please be aware that cyql takes no responsibility for the accuracy of the information, since the projects update their profiles independently of cyql.
+
 ```typescript
 type ProjectDocData = {
 	// main
